@@ -1,0 +1,15 @@
+{
+    "name": "@quados/quadpkgs",
+    "version": "1.0.0",
+    "description": "Quad packages",
+    "author": "Henry-Hiles",
+    "license": "GPL-3.0-only",
+    "type": "module",
+    "packageManager": "pnpm@8.14.0",
+    "devDependencies": {
+        "tsx": "^4.7.1"
+    },
+    "dependencies": {
+        "dataclass": "^2.1.1"
+    }
+}

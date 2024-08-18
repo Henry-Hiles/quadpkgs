@@ -1,0 +1,17 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"title": "maintainer",
+	"description": "Schema for a QuadPkg Maintainer",
+	"type": "object",
+	"properties": {
+        "gitUsername": {
+            "description": "Maintainer's git username",
+            "type": "string"
+        },
+        "email": {
+            "description": "Maintainer's email address",
+            "type": "string"
+        }
+    },
+    "required": ["gitUsername"]
+}

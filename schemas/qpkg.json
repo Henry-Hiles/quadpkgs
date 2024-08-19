@@ -1,13 +1,13 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"title": "QuadPkg",
-	"description": "Schema for a QuadPkg",
-	"type": "object",
-	"properties": {
-		"source": {
-			"description": "The source code of this package",
-			"type": "object",
-			"properties": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "QuadPkg",
+    "description": "Schema for a QuadPkg",
+    "type": "object",
+    "properties": {
+        "source": {
+            "description": "The source code of this package",
+            "type": "object",
+            "properties": {
                 "type": {
                     "description": "The type of source to fetch from",
                     "type": "string",
@@ -17,7 +17,8 @@
                     "description": "The location of the source",
                     "type": "string"
                 }
-		    }
+            },
+            "required": ["type", "url"]
         },
         "buildInstructions": {
             "description": "Commands needed to run to build this package",
@@ -44,5 +45,12 @@
             "type": "string"
         }
     },
-    "required": ["source", "buildInstructions", "name", "maintainers", "license", "commit"]
+    "required": [
+        "source",
+        "buildInstructions",
+        "name",
+        "maintainers",
+        "license",
+        "commit"
+    ]
 }

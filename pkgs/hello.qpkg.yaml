@@ -1,1 +1,9 @@
 # yaml-language-server: $schema=../schemas/qpkg.json
+source:
+  type: "git"
+  url: "https://github.com"
+buildInstructions: ""
+name: ""
+maintainers: []
+license: "none"
+commit: ""

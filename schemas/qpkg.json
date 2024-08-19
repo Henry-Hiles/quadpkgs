@@ -10,9 +10,8 @@
 			"properties": {
                 "type": {
                     "description": "The type of source to fetch from",
-                    "type": {
-                        "enum": ["git", "file"]
-                    }
+                    "type": "string",
+                    "enum": ["git", "file"]
                 },
                 "url": {
                     "description": "The location of the source",
@@ -37,9 +36,8 @@
         },
         "license": {
             "description": "The license of software distribution used for this package",
-            "type": {
-                "enum": ["gpl", "none"]
-            }
+            "type": "string",
+            "enum": ["gpl", "none"]
         },
         "commit": {
             "description": "The commit of the source code to use for this package",
